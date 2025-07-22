@@ -1,0 +1,593 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya Rathore | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #110656 20%, #205fb6 80%);
+      color: #f8fafc;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: transparent;
+    }
+
+    .logo {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      
+    }
+
+    .nav-links {
+      list-style:none;
+      display: flex;
+      gap: 6rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 690;
+      transition: color 0.1s ease;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2b59a4ad;
+      border-radius: 20px;
+      padding: 4rem;
+      margin: 2rem;
+      box-shadow: 0 0 30px rgba(56, 191, 248, 0.58);
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text h3 {
+      color: #69cef9;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      color: #b4d3ff;
+      margin-bottom: 2rem;
+      max-width: 700px;
+    }
+
+    .btn {
+      background: #37bffe;
+      color: #0f172a;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 1rem;
+      transition:  0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      color: #fff;
+    }
+
+    .hero-img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(198, 233, 249, 0.562);
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+    <div class="logo">Shreya.</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I'm Shreya Rathore</h1>
+      <h3>Frontend Developer & AI Learner</h3>
+      <p>I create beautiful user interfaces and build smart solutions. Currently exploring React, Firebase, and UI/UX design.</p>
+      <a href="shreyarathore_cv-protected.pdf" download class="btn">Download Resume</a>
+    </div>
+    <img src="shreya.jpg" alt="Shreya's photo" class="hero-img">
+  </section>
+</body>
+ <footer>
+    <p>&copy; 2025 Shreya Rathore | Made with ❤️</p>
+  </footer>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya Rathore | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #441752;
+      --secondary: #8174A0;
+      --accent: #A888B5;
+      --light: #EFB6C8;
+      --white: #ffffff;
+      --text-dark: #2d3748;
+      --text-light: #64748b;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--white);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background particles */
+    .bg-particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .particle {
+      position: absolute;
+      background: var(--light);
+      border-radius: 50%;
+      opacity: 0.1;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) { width: 4px; height: 4px; top: 10%; left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { width: 6px; height: 6px; top: 20%; left: 80%; animation-delay: 1s; }
+    .particle:nth-child(3) { width: 3px; height: 3px; top: 60%; left: 20%; animation-delay: 2s; }
+    .particle:nth-child(4) { width: 5px; height: 5px; top: 80%; left: 70%; animation-delay: 3s; }
+    .particle:nth-child(5) { width: 4px; height: 4px; top: 30%; left: 60%; animation-delay: 4s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(20px);
+      background: rgba(68, 23, 82, 0.8);
+      border-bottom: 1px solid rgba(239, 182, 200, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+      color: var(--white);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-links a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(239, 182, 200, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .nav-links a:hover::before {
+      left: 100%;
+    }
+
+    .nav-links a:hover {
+      color: var(--light);
+      background: rgba(239, 182, 200, 0.1);
+      transform: translateY(-2px);
+    }
+
+    main {
+      margin-top: 80px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6rem 3rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      min-height: calc(100vh - 80px);
+      gap: 4rem;
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--white), var(--light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .hero-text h3 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out 0.5s forwards;
+    }
+
+    .hero-text p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out 1s forwards;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--light), var(--accent));
+      color: var(--primary);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 10px 30px rgba(239, 182, 200, 0.3);
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out 1.5s forwards;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 40px rgba(239, 182, 200, 0.4);
+    }
+
+    .hero-image {
+      flex: 0 0 350px;
+      position: relative;
+      animation: slideInRight 1s ease-out;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: -20px;
+      bottom: -20px;
+      background: linear-gradient(135deg, var(--accent), var(--light));
+      border-radius: 30px;
+      z-index: 1;
+      opacity: 0.3;
+      transition: all 0.3s ease;
+    }
+
+    .hero-image:hover::before {
+      transform: rotate(3deg);
+      opacity: 0.5;
+    }
+
+    .hero-image:hover .hero-img {
+      transform: translateY(-10px) rotate(-2deg);
+    }
+
+    footer {
+      background: rgba(68, 23, 82, 0.8);
+      backdrop-filter: blur(20px);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid rgba(239, 182, 200, 0.1);
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+    }
+
+    /* Animations */
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 1rem 2rem;
+      }
+
+      .nav-links {
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 4rem 2rem;
+        gap: 3rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-text h3 {
+        font-size: 1.3rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+      }
+
+      .hero-image {
+        flex: 0 0 280px;
+      }
+
+      .hero-img {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-content {
+        padding: 1rem 1.5rem;
+      }
+
+      .logo {
+        font-size: 1.7rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+      }
+
+      .hero {
+        padding: 3rem 1.5rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-image {
+        flex: 0 0 250px;
+      }
+
+      .hero-img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <a href="home.html" class="logo">Shreya.</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I'm Shreya Rathore</h1>
+        <h3>Frontend Developer & AI Learner</h3>
+        <p>I create beautiful user interfaces and build smart solutions. Currently exploring React, Firebase, and UI/UX design to craft exceptional digital experiences.</p>
+        <a href="shreyarathore_cv-protected.pdf" download class="btn">Download Resume</a>
+      </div>
+      <div class="hero-image">
+        <img src="shreya.jpg" alt="Shreya's photo" class="hero-img">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shreya Rathore | Made with ❤️</p>
+  </footer>
+
+  <script>
+    // Add scroll effect to header
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(68, 23, 82, 0.95)';
+        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+      } else {
+        header.style.background = 'rgba(68, 23, 82, 0.8)';
+        header.style.boxShadow = 'none';
+      }
+    });
+
+    // Add smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
